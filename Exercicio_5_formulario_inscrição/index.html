@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+    <form action="">
+        <label for="name">Nome:</label>
+        <br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <label for="whastapp">Whastapp:</label>
+        <br>
+        <input type="tel" name="whastapp" id="whastapp" required>
+        <br><br>
+
+        <label>Área de atuação:</label>
+        <br>
+        <input type="radio" id="desenvolvimento" name="areaDeAtuacao" value="desenvolvimento"> <!-- eu inverti os valores, coloquei as informações do NAME no ID e do ID no NAME-->
+        <label for="desenvolvimento">Desenvolvimento</label>
+
+        <input type="radio" id="qa" name="areaDeAtuacao" value="qa">
+        <label for="qa">QA</label>
+
+        <input type="radio" id="analiseDeDados" name="areaDeAtuacao" value="analiseDeDados">
+        <label for="analiseDeDados">Análise de Dados</label>
+
+        <input type="radio" id="infraestrutura" name="areaDeAtuacao" value="infraestrutura">
+        <label for="infraestrutura">Infraestrutura</label>
+        <br><br>
+
+        <label for="observacoes">Observações:</label>
+        <br>
+        <textarea name="observacoes" id="observacoes"></textarea>
+        <br><br>
+
+        <input type="checkbox" name="receberEmail" id="receberEmail" checked> <!-- adicionei o atributo "checked"-->
+        <label for="receberEmail">Desejo receber novidades e ofertas por email.</label>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form> 
+</body>
+</html>
